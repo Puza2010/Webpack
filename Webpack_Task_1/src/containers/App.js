@@ -3,17 +3,17 @@ import uuid from 'uuid';
 import style from './App.css';
 
 class App extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             data: [],
             counter: 0
         };
     }
-    addTodo(val){
+    addTodo(val) {
         const todo = {
             text: val,
-            id: uuid.v4(),
+            id: uuid.v4()
         };
         const data = [...this.state.data, todo];
         this.setState({data});
@@ -25,7 +25,7 @@ class App extends React.Component {
 
     countTasks(value){
         const tasks = {
-            number: value,
+            number: value
         };
         const counter = todo.length;
         this.setState({counter});

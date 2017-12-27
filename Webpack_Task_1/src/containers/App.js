@@ -8,7 +8,6 @@ class App extends React.Component {
         super(props);
         this.state = {
             data: [],
-            counter: 0
         };
     }
     addTodo(val) {
@@ -24,20 +23,13 @@ class App extends React.Component {
         this.setState({data: remainder});
     }
 
-    countTasks(value){
-        const tasks = {
-            number: value
-        };
-        const counter = todo.length;
-        this.setState({counter});
-    }
-
     render() {
         return (
             <div className={style.TodoApp}>
                 Tutaj pojawią się komponenty naszej aplikacji.
             </div>
-            <Title value={this.state.todo.length}>
+            <h1>{props.title}</h1>
+            <Title title={`Liczba zadan do zrobienia to: ${this.state.todo.length}`} />
         );
     }
 }

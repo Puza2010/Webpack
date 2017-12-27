@@ -28,7 +28,6 @@ class App extends React.Component {
             <div className={style.TodoApp}>
                 Tutaj pojawią się komponenty naszej aplikacji.
             </div>
-            <h1>{props.title}</h1>
             <Title title={`Liczba zadan do zrobienia to: ${this.state.todo.length}`} />
         );
     }

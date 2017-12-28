@@ -1034,7 +1034,19 @@ var App = function (_React$Component) {
                     'Tutaj pojawi\u0105 si\u0119 komponenty naszej aplikacji.'
                 ),
                 _react2.default.createElement(_Title2.default, { title: 'Liczba zadan do zrobienia to: ' + this.state.todo.length }),
-                _react2.default.createElement(_TodoList2.default, { list: this.state.data })
+                _react2.default.createElement(_TodoList2.default, { list: this.state.data, removeTodo: function (_removeTodo) {
+                        function removeTodo(_x) {
+                            return _removeTodo.apply(this, arguments);
+                        }
+
+                        removeTodo.toString = function () {
+                            return _removeTodo.toString();
+                        };
+
+                        return removeTodo;
+                    }(function (id) {
+                        return removeTodo(id);
+                    }) })
             );
         }
     }]);
@@ -8692,10 +8704,9 @@ exports.default = Title;
 
 /***/ }),
 /* 40 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
+throw new Error("Module build failed: SyntaxError: D:/Git_Repository/Webpack/Webpack_Task_1/src/components/TodoList.js: Unexpected token, expected , (5:38)\n\n\u001b[0m \u001b[90m 3 | \u001b[39m\u001b[36mconst\u001b[39m \u001b[33mTodoList\u001b[39m \u001b[33m=\u001b[39m props \u001b[33m=>\u001b[39m (\u001b[33m<\u001b[39m\u001b[33mul\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 4 | \u001b[39m\t{\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 | \u001b[39m\t\tprops\u001b[33m.\u001b[39mlist\u001b[33m.\u001b[39mmap(item \u001b[33m=>\u001b[39m { \u001b[36mreturn\u001b[39m (li key\u001b[33m=\u001b[39m{item\u001b[33m.\u001b[39mid}\u001b[33m>\u001b[39m{item\u001b[33m.\u001b[39mtext}\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mli\u001b[39m\u001b[33m>\u001b[39m \u001b[33m<\u001b[39m\u001b[33mspan\u001b[39m onClick\u001b[33m=\u001b[39m{() \u001b[33m=>\u001b[39m {props\u001b[33m.\u001b[39mremoveTodo(item\u001b[33m.\u001b[39mid)}}\u001b[33m>\u001b[39mx\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mspan\u001b[39m\u001b[33m>\u001b[39m)})\n \u001b[90m   | \u001b[39m\t\t                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 | \u001b[39m\t}\n \u001b[90m 7 | \u001b[39m\n \u001b[90m 8 | \u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mul\u001b[39m\u001b[33m>\u001b[39m)\u001b[0m\n");
 
 /***/ })
 /******/ ]);

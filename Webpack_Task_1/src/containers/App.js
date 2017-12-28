@@ -41,7 +41,7 @@ class App extends React.Component {
                     Tutaj pojawią się komponenty naszej aplikacji.
                 </div>
                 <Title title={`Liczba zadan do zrobienia to: ${this.state.todo.length}`} />
-                <TodoList list={this.state.data} {removeTodo()} />
+                <TodoList list={this.state.data} removeTodo={id => removeTodo(id)}  />
             </div>
         );
     }

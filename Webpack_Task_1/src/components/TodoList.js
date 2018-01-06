@@ -1,4 +1,4 @@
-import App from '../containers/App.js';
+import React from 'react';
 
 const TodoList = props => (<ul>
 	{

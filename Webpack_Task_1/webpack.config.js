@@ -26,11 +26,10 @@ plugins.push(
 
 
 module.exports = {
-    entry: './src/index.js',
-        output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: 'app.bundle.js'
-    },
+    entry: [
+        'react-hot-loader/patch',
+        './src/index.js'
+    ],
     plugins: [
             new HtmlWebpackPlugin({
                 template: 'src/index.html',

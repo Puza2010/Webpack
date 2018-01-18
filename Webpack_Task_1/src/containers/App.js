@@ -48,7 +48,7 @@ class App extends React.Component {
             <div>
                 <Title title={`Liczba zadan do zrobienia to: ${this.state.data.length}`} />
                 <TodoList todos={this.state.data} removeTodo={id => this.removeTodo(id)}  />
-                <TodoForm addTodo={val => this.addTodo(val)} onChange={this.handleChange} />
+                <TodoForm addTodo={val => this.addTodo(val)} onChange={this.handleChange} value={this.state.value} />
             </div>
         );
     }

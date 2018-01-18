@@ -32,7 +32,7 @@ class App extends React.Component {
 
     addTodo(val) {
         const todo = {
-            text: val,
+            text: this.state.value,
             id: uuid.v4()
         };
         const data = [...this.state.data, todo];

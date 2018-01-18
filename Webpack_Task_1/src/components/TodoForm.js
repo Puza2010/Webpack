@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TodoForm = props => {
-	return (<form onSubmit={ev => {ev. preventDefault(); props.addTodo(props.val)}}>Add task: 
+	return (<form onSubmit={ev => {ev. preventDefault(); props.addTodo(props.value)}}>Add task: 
 		<input 
 			type="text"
 			value={props.value}

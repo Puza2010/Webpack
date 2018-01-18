@@ -21,8 +21,15 @@ class App extends React.Component {
                     text: 'feed my cat'
                 }
             ],
+            value: ''
         };
+        this.handleChange = this.handleChange.bind(this);      
     }
+
+    handleChange(event) {
+        this.setState({value: event.target.value});
+    }
+
     addTodo(val) {
         const todo = {
             text: val,
@@ -39,9 +46,6 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <div className={style.TodoApp}>
-                    Tutaj pojawią się komponenty naszej aplikacji.
-                </div>
                 <Title title={`Liczba zadan do zrobienia to: ${this.state.data.length}`} />
                 <TodoList todos={this.state.data} removeTodo={id => this.removeTodo(id)}  />
                 <TodoForm addTodo={val => this.addTodo(val)} onChange={this.handleChange} />
